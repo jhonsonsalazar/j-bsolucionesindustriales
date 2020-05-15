@@ -1,0 +1,82 @@
+* { margin: 0; padding: 0;}
+body{font-family: arial, helvetica, sans-serif;}
+
+#header {
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+    height: 80px;
+	overflow:hidden; /* Eliminamos errores de float */
+	background:/*white*/rgb(200, 222, 20);
+	position: fixed;  
+}
+
+#contenedor1 {width:1000px; /* Establecemos que el ancho sera del 90% */
+	max-width:1300px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+    
+}
+
+#contenedor2 {width:1000px; /* Establecemos que el ancho sera del 90% */
+	max-width:1300px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+    
+}
+
+#container-portada{
+   
+    width: 100%;
+    overflow: hidden; 
+    height: 300px;
+    padding-top: 100px;
+    background-image: url(../img/portada.png);
+    animation: movimiento 10s infinite linear alternate;  }
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+#contenedor { width: 1000px; margin: 0 auto; /*border: 1px solid;*/}
+#redes {position: fixed; }
+#cabecera {position:relative; padding-top: 20px;}
+#logo {width: 10%; float:left; color: black; font-size: 25px; font-weight: bold;  background: url(../img/logoempresa1.png) no-repeat left center; padding-left: 7%; padding-top: 12px;}
+
+#navegacion {width: 80%; float:none;  margin: 0 250px; }
+#navegacion ul {list-style-type:none;}
+#navegacion ul { display: inline-block;}
+#navegacion ul {background:none; text-decoration:none; padding: 20px 20px; font-size: 15px;  font-weight: bold;}
+#menu > li {display: inline-block; position: relative; }
+#menu > li > a {color:black; display:block; padding: 10px 20px;text-decoration:none; }
+#menu >li > a:hover{/*border-bottom: 2px solid black; */transition: all .5s; background: /*deepskyblue*/rgba(155,155,155,0.9); border-radius: 10px; }
+
+#submenu { position: fixed; width: 15%; opacity: 0; visibility: hidden; transition: opacity 1.5s; /*column-count: 2; column-gap: 0px;*/}
+#submenu li a {color: black; display:block; padding: 15px; text-decoration:none ;background-color:rgba(155,155,155,0.9); font-size: 15px; border-radius: 10px; }
+#menu li:hover #submenu {visibility: visible; opacity: 1;   }
+#submenu > li > a:hover{ color: black; padding: 14px; background: rgb(200,222,20);/*deepskyblue;*/ text-decoration: underline; transition: all .5s; }
+
+#submenu1 { position: fixed; width: 28%; opacity: 0; visibility: hidden; transition: opacity 1.5s; /*column-count: 2; column-gap: 0px;*/ }
+#submenu1 li a {color: black; display:block; padding: 15px; text-decoration:none ;background-color:rgba(155,155,155,0.9); font-size: 15px; border-radius: 10px;}
+#menu li:hover #submenu1 {visibility: visible; opacity: 1;  }
+#submenu1 > li > a:hover{ color: black; padding: 14px; background:rgb(200,222,20);/*deepskyblue;*/ transition: all .5s; text-decoration: underline; }
+
+
+#mensaje {  clear: both;   text-align: center; color: black; background: url(../img/logo%20empresa.png) no-repeat center 10px;  padding-top: 160px; margin: 0 auto; display: block;}
+#mensaje h2 {  font-size: 25px; text-transform: uppercase; font-weight: normal; }
+#mensaje p {font-size: 15px;   letter-spacing: 2px; padding-bottom: 10px; padding-left: 200px; padding-right: 200px;}
+#mensaje a { display:inline-block;  color:black; text-decoration: none;  border: 2px solid black; padding: 10px 20px; font-size: 14px;  }
+
+
+#principal, #footer {padding: 20px 0;}
+#principal img { width: 50%; float: right; margin-left: 20px;}
+#principal h1 {color: orange; background: url(../img/nube-naranja.png) no-repeat left center; padding-left: 25px; margin-bottom: 15px;}
+#principal p {font-size: 12px; color:darkgray; letter-spacing: 1px; line-height: 1.8}
+#principal hr {border: none; border-top: 1px solid darkgray; margin: 25px 0;}
+#principal iframe { width: 100%; height: 250px; }
+#footer{ background: darkgray; text-align: center; position: relative;}
+#footer p {color: black; font-size: 12px;}
+#footer img {position:absolute; right: 5px; top: 50%; margin-top: -8px;}
+#redes {position: fixed; right: 0; top:420px; width: 36px}
